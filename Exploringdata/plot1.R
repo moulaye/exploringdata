@@ -6,5 +6,5 @@ dataset <- read.table(filelocation,sep=";",na.strings="?",header=T)
 
 #create plot 1
 png(file="plot1.png",bg="transparent",width=480,height=480)
-with(maindata,hist(Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)"))
+with(dataset,hist(Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)"))
 dev.off()
